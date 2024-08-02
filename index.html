@@ -7,6 +7,8 @@
   <title>宜蘭包棟行程</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     body {
       background-color: #E9E9E9;
@@ -62,13 +64,11 @@
       color: #333333;
       /* 深灰色超連結文本 */
       text-decoration: none;
-      display: block;
-      /* 使 <a> 標籤為塊級元素 */
+      display: flex;
+      /* 使用flex佈局 */
+      align-items: flex-start;
+      /* 子項對齊上方 */
       width: 100%;
-      /* 使 <a> 標籤寬度佔滿整個 <li> */
-      height: 100%;
-      /* 使 <a> 標籤高度佔滿整個 <li> */
-      padding: 10px 15px;
       /* 添加內邊距，使文字不會貼邊 */
     }
 
@@ -88,6 +88,13 @@
       color: #000000;
       /* 黑色懸停文本 */
     }
+
+    .icon-align {
+      vertical-align: middle;
+      /* 或者使用 baseline, text-bottom, text-top 根據需要調整 */
+      font-size: 25px;
+      color: #D1B09C;
+    }
   </style>
 </head>
 
@@ -106,39 +113,39 @@
         <ul class="list-group">
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%AE%9C%E8%98%AD%E8%BB%8A%E7%AB%99/@24.7552971,121.7557478,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e4d000000001:0xe3b36e99d79a6359!8m2!3d24.7552923!4d121.7583174!16s%2Fm%2F04cvhbh?hl=zh-TW&entry=ttu"
-              target="_blank">10:45 宜蘭車站 (停留 00時05分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>10:45 宜蘭車站 (停留 00時05分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E7%A7%9F%E7%A7%9F%E8%BB%8A+-+%E5%AE%9C%E8%98%AD%E7%AB%99/@24.7507183,121.7572505,17z/data=!4m14!1m7!3m6!1s0x3467e57aea0f7147:0x11085f7cd8c267d4!2z5Lit56ef56ef6LuKIC0g5a6c6Jit56uZ!8m2!3d24.7507183!4d121.7598201!16s%2Fg%2F11gxjw3sh5!3m5!1s0x3467e57aea0f7147:0x11085f7cd8c267d4!8m2!3d24.7507183!4d121.7598201!16s%2Fg%2F11gxjw3sh5?hl=zh-TW&entry=ttu"
-              target="_blank">10:55 中租租車 - 宜蘭站 (停留 00時15分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>10:55 中租租車 - 宜蘭站 (停留 00時15分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E8%B2%9D%E5%8A%A0%E8%8E%AB%E5%BB%9A%E6%88%BF/@24.8611778,121.7917943,14z/data=!4m10!1m3!11m2!2s5CqqT7q_n6NJYOY9nP7nhoTCobCHAw!3e3!3m5!1s0x3467f7697e398b13:0xd78c7b5852f82116!8m2!3d24.8611659!4d121.8278797!16s%2Fg%2F11dx91bh1b?hl=zh-TW&entry=ttu"
-              target="_blank">11:35 貝加莫廚房 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>11:35 貝加莫廚房 (停留 01時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E9%98%BF%E5%AE%97%E8%8A%8B%E5%86%B0%E5%9F%8E/@24.8587861,121.8233877,17z/data=!3m1!4b1!4m6!3m5!1s0x3467f769ded65e7b:0x833b72c5383b8775!8m2!3d24.8587861!4d121.8259573!16s%2Fg%2F1tfxddz8?hl=zh-TW&entry=ttu"
-              target="_blank">12:40 阿宗芋冰城 (停留 00時10分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>12:40 阿宗芋冰城 (停留 00時10分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E9%A0%AD%E5%9F%8E%E8%80%81%E8%A1%97/@24.8569701,121.8215885,17z/data=!3m1!4b1!4m6!3m5!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg?hl=zh-TW&entry=ttu"
-              target="_blank">12:55 頭城老街 (停留 00時30分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>12:55 頭城老街 (停留 00時30分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E4%B9%9D%E8%99%9F%E5%92%96%E5%95%A1%E5%A4%96%E6%BE%B3%E9%A4%A8/@24.8740963,121.8300551,15z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467f7a70f77b8c5:0x82a528cf98ab4866!8m2!3d24.878043!4d121.8415!16s%2Fg%2F11b6v4bx9y?hl=zh-TW&entry=ttu"
-              target="_blank">13:32 九號咖啡外澳館 (停留 00時10分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>13:32 九號咖啡外澳館 (停留 00時10分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%A4%96%E6%BE%B3%E6%B2%99%E7%81%98/@24.8740963,121.8300551,15z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467f7a7b0c983c3:0x76e26a6834543402!8m2!3d24.8778107!4d121.8430714!16s%2Fg%2F11c0rmtnx2?hl=zh-TW&entry=ttu"
-              target="_blank">13:45 外澳沙灘 (停留 02時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>13:45 外澳沙灘 (停留 02時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%A3%AF%E5%9C%8D%E5%BC%B5%E5%AE%85/@24.753171,121.8024857,15.25z/data=!4m17!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m8!1s0x3467efffa9eaacc3:0x806b0ed0243acb69!5m2!4m1!1i2!8m2!3d24.7531407!4d121.8130499!16s%2Fg%2F1tgcvt2w?hl=zh-TW&entry=ttu"
-              target="_blank">16:08 壯圍張宅 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>16:08 壯圍張宅 (停留 01時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%AE%9C%E8%98%AD%E5%A3%AF%E5%9C%8D%E7%A9%80%E5%80%89+%E9%9C%80%E9%A0%90%E7%B4%84/@24.7518841,121.7713627,14z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467e53f4a136209:0xabdbc429ec571db4!8m2!3d24.7458311!4d121.786567!16s%2Fg%2F1v62fd2m?hl=zh-TW&entry=ttu"
-              target="_blank">17:17 宜蘭壯圍穀倉米食風味料理餐廳 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>17:17 宜蘭壯圍穀倉米食風味料理餐廳 (停留 01時00分)</a>
           </li>
         </ul>
       </div>
@@ -154,59 +161,59 @@
         <ul class="list-group">
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%A3%AF%E5%9C%8D%E6%B2%99%E4%B8%98%E6%97%85%E9%81%8A%E6%9C%8D%E5%8B%99%E5%9C%92%E5%8D%80%E5%81%9C%E8%BB%8A%E5%A0%B4/@24.7379932,121.8164515,16.25z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467ef960c2a4c95:0xad1d1158660062b2!8m2!3d24.7384972!4d121.8192358!16s%2Fg%2F11jsztqn__?hl=zh-TW&entry=ttu"
-              target="_blank">08:00 壯圍沙丘 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>08:00 壯圍沙丘 (停留 01時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E4%B8%89%E5%A5%87%E5%A5%89%E5%B0%8A%E5%AE%AE%E7%8E%89%E7%9A%87%E5%A4%A7%E5%A4%A9%E5%B0%8A/@24.645602,121.8036565,15z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467e89e7a247a89:0x1537d3e27fb041e0!8m2!3d24.6446786!4d121.813009!16s%2Fg%2F1w2yrlzn?hl=zh-TW&entry=ttu"
-              target="_blank">09:20 奉尊宮 (停留 00時05分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>09:20 奉尊宮 (停留 00時05分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%AE%9C%E8%98%AD%E4%B8%89%E5%A5%87%E7%BE%8E%E5%BE%91(%E5%86%AC%E5%B1%B1%E4%BC%AF%E6%9C%97%E5%A4%A7%E9%81%93)/@24.6449837,121.8102756,16z/data=!4m14!1m7!3m6!1s0x3467f7428e5d9f65:0xfa016bf448ffd117!2z6aCt5Z-O6ICB6KGX!8m2!3d24.8569701!4d121.8241581!16s%2Fg%2F1jljz2mcg!3m5!1s0x3467e89a5e2ede35:0x311457fcbed83ec7!8m2!3d24.645495!4d121.8144542!16s%2Fg%2F11b81rtmwt?hl=zh-TW&entry=ttu"
-              target="_blank">09:28 宜蘭三奇美徑(冬山伯朗大道) (停留 00時40分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>09:28 宜蘭三奇美徑(冬山伯朗大道) (停留 00時40分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%86%AC%E5%B1%B1%E9%87%91%E7%8F%A0%E8%94%A5%E6%B2%B9%E9%A4%85/@24.6335264,121.7886702,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e7cb33b5563b:0x48af4af80c223a50!8m2!3d24.6335264!4d121.7912398!16s%2Fg%2F1hc1v5c_4?hl=zh-TW&entry=ttu"
-              target="_blank">10:16 冬山金珠蔥油餅 (停留 00時10分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>10:16 冬山金珠蔥油餅 (停留 00時10分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E6%96%91%E6%AF%94%E5%B1%B1%E4%B8%98/@24.6468138,121.740586,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e7c1b9f53ec1:0xb19ace3de1dfcf7a!8m2!3d24.6468138!4d121.7431556!16s%2Fg%2F11hyn6kwr7?hl=zh-TW&entry=ttu"
-              target="_blank">10:36 斑比山丘 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>10:36 斑比山丘 (停留 01時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E6%96%B0%E5%AF%AE%E7%80%91%E5%B8%83%E6%AD%A5%E9%81%93/@24.6062322,121.7467349,21z/data=!4m10!1m2!2m1!1z5paw5a-u54CR5biD5q2l6YGT!3m6!1s0x3467e76103bcf6f1:0xf4208f9a3f7edd7d!8m2!3d24.6062322!4d121.7470165!15sChLmlrDlr67ngJHluIPmraXpgZNaFyIV5pawIOWvriDngJHluIMg5q2l6YGTkgELaGlraW5nX2FyZWGaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUm9PRGRtTjNGUlJSQULgAQA!16s%2Fg%2F11xcz9kg9?hl=zh-TW&entry=ttu"
-              target="_blank">11:48 新寮瀑布步道 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>11:48 新寮瀑布步道 (停留 01時00分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E8%B2%A1%E8%A8%98%E8%87%AD%E8%B1%86%E8%85%90/@24.6785823,121.6988681,13z/data=!4m10!1m2!2m1!1z6LKh6KiY6Iet6LGG6IWQ!3m6!1s0x3467e6785a0e1c2b:0xc8ae87c0ec60d0cd!8m2!3d24.6785823!4d121.7709659!15sCg_osqHoqJjoh63osYbohZBaFCIS6LKhIOiomCDoh60g6LGG6IWQkgEPdG9mdV9yZXN0YXVyYW504AEA!16s%2Fg%2F1tj7yq8w?hl=zh-TW&entry=ttu"
-              target="_blank">13:10 財記臭豆腐 (停留 00時30分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>13:10 財記臭豆腐 (停留 00時30分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E6%9E%97%E5%A0%B4%E8%82%89%E7%BE%B9/@24.6824105,121.7686812,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e5d6725c8d47:0xaace133a6f875780!8m2!3d24.6824105!4d121.7712508!16s%2Fg%2F11b7q28ryq?hl=zh-TW&entry=ttu"
-              target="_blank">13:48 林場肉羹 (停留 00時40分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>13:48 林場肉羹 (停留 00時40分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E7%BE%85%E6%9D%B1%E6%9E%97%E6%A5%AD%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80/@24.684278,121.7697884,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e5d68f8e8f31:0x7570427396dacf8!8m2!3d24.684278!4d121.772358!16s%2Fg%2F155t06q8?hl=zh-TW&entry=ttu"
-              target="_blank">14:32 羅東林業文化園區 (停留 00時40分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>14:32 羅東林業文化園區 (停留 00時40分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%8C%97%E9%96%80%E7%B6%A0%E8%B1%86%E6%B2%99%E7%89%9B%E4%B9%B3%E5%A4%A7%E7%8E%8B-%E7%BE%85%E6%9D%B1%E5%BA%97/@24.6842411,121.7685036,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e59b1b6f529d:0x28d7507c9ae1a4be!8m2!3d24.6842411!4d121.7710732!16s%2Fg%2F11tk4jzb0q?hl=zh-TW&entry=ttu"
-              target="_blank">15:14 北門綠豆沙牛乳大王-羅東店 (停留 00時05分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>15:14 北門綠豆沙牛乳大王-羅東店 (停留 00時05分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E9%BB%91%E7%A7%80%E5%86%B0%E5%BA%97/@24.7442247,121.7418359,16z/data=!4m10!1m2!2m1!1z6buR56eA5Yaw5bqX!3m6!1s0x3467e4e8d67b8275:0xab9f8245100a2903!8m2!3d24.7442247!4d121.7508481!15sCgzpu5Hnp4DlhrDlupdaESIP6buRIOengCDlhrAg5bqXkgEYaWNlX2NyZWFtX2FuZF9kcmlua19zaG9w4AEA!16s%2Fg%2F11g_rfp_r?hl=zh-TW&entry=ttu"
-              target="_blank">15:35 黑秀冰店 (停留 00時30分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>15:35 黑秀冰店 (停留 00時30分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E7%A7%9F%E7%A7%9F%E8%BB%8A+-+%E5%AE%9C%E8%98%AD%E7%AB%99/@24.7507183,121.7572505,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e57aea0f7147:0x11085f7cd8c267d4!8m2!3d24.7507183!4d121.7598201!16s%2Fg%2F11gxjw3sh5?hl=zh-TW&entry=ttu"
-              target="_blank">16:11 中租租車 - 宜蘭站 (停留 00時15分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>16:11 中租租車 - 宜蘭站 (停留 00時15分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/search/%E5%AE%9C%E8%98%AD%E5%B9%BE%E7%B1%B3%E5%85%AC%E5%9C%92/@24.752485,121.7543425,17z/data=!3m1!4b1?hl=zh-TW&entry=ttu"
-              target="_blank">16:36 宜蘭幾米公園 (停留 00時15分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>16:36 宜蘭幾米公園 (停留 00時15分)</a>
           </li>
           <li class="list-group-item">
             <a href="https://www.google.com.tw/maps/place/%E5%AE%9C%E8%98%AD%E8%BB%8A%E7%AB%99/@24.75288,121.7528053,16.5z/data=!4m9!1m2!2m1!1z5a6c6Jit5bm-57Gz5YWs5ZyS!3m5!1s0x3467e4d000000001:0xe3b36e99d79a6359!8m2!3d24.7552923!4d121.7583174!16s%2Fm%2F04cvhbh?hl=zh-TW&entry=ttu"
-              target="_blank">16:55 宜蘭車站 (停留 01時00分)</a>
+              target="_blank"><i class="material-icons icon-align">location_on</i>16:55 宜蘭車站 (停留 01時00分)</a>
           </li>
         </ul>
       </div>
